@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .col-4 {
+            width: 33.3333%;
+            float: left;
+        }
+        
+        .container {
+            width: 70%;
+            margin: auto;
+            clear: both;
+        }
+        
+        .box {
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        
+        .subbox {
+            border: 2px solid whitesmoke;
+        }
+        
+        .header {
+            position: relative;
+            height: 300px;
+        }
+        
+        .header img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .price {
+            position: absolute;
+            right: 13px;
+            bottom: -30px;
+            background-color: orange;
+            border-radius: 50%;
+            font-size: 25px;
+            text-align: center;
+            height: 60px;
+            width: 60px;
+            color: rgb(0, 36, 71);
+            padding: 15px 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .body {
+            background-color: rgb(250, 249, 255);
+            padding: 15px;
+        }
+        
+        .body button {
+            background-color: rgb(0, 36, 71);
+            color: white;
+            height: 40px;
+            width: 120px;
+            border: 0;
+        }
+        
+        .body h2 {
+            color: rgba(37, 58, 81, 1);
+            margin-top: 20px;
+            font-size: 23px;
+        }
+        
+        .body p {
+            margin-top: 20px;
+            color: rgb(117, 121, 129);
+            font-size: 16px;
+        }
+        
+        .footer {
+            margin-top: 23px;
+            position: relative;
+        }
+        
+        .footer .p-span {
+            position: absolute;
+            margin-left: 9px;
+        }
+        
+        .p-span p {
+            color: rgba(37, 58, 81, 1);
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        
+        .footer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .footer .students {
+            font-size: 16px;
+            float: right;
+            margin: 16px 10px;
+        }
+        
+        @media (max-width: 768px) and (min-width: 425px) {
+            .col-4 {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 425px) {
+            .col-4 {
+                width: 100%;
+            }
+            .container {
+                width: 100%;
+            }
+            .box {
+                padding: 10px;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- First Box -->
+        <div class="col-4 box">
+            <div class="subbox">
+                <div class="header">
+                    <img src="" alt="html icon" id="img1">
+                    <div class="price">
+                        <p id="price1"></p>
+                    </div>
+                </div>
+                <div class="body">
+                    <button>DESIGN</button>
+                    <h2 id="title1"></h2>
+                    <p id="content1"></p>
+                    <div class="footer">
+                        <span><img src="img/pic.jpg" alt=""></span>
+                        <span class="p-span"><p>Cameron</p></span>
+                        <span class="students"><i class="far fa-heart"></i> 35</span>
+                        <span class="students"><i class="far fa-user"></i> 25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Box -->
+        <div class="col-4 box">
+            <div class="subbox">
+                <div class="header">
+                    <img src="" alt="html icon" id="img2">
+                    <div class="price" style="color: orange; background-color: rgb(0, 36, 71);">
+                        <p id="price2"></p>
+                    </div>
+                </div>
+                <div class="body" style="background-color: white;">
+                    <button>DESIGN</button>
+                    <h2 style="color: orange;" id="title2"></h2>
+                    <p id="content2"></p>
+                    <div class="footer">
+                        <span><img src="img/pic.jpg" alt=""></span>
+                        <span class="p-span"><p>Cameron</p></span>
+                        <span class="students"><i class="far fa-heart"></i> 35</span>
+                        <span class="students"><i class="far fa-user"></i> 25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third Box -->
+        <div class="col-4 box">
+            <div class="subbox">
+                <div class="header">
+                    <img src="" alt="html icon" id="img3">
+                    <div class="price">
+                        <p id="price3"></p>
+                    </div>
+                </div>
+                <div class="body">
+                    <button>DESIGN</button>
+                    <h2 id="title3"></h2>
+                    <p id="content3"></p>
+                    <div class="footer">
+                        <span><img src="img/pic.jpg" alt=""></span>
+                        <span class="p-span"><p>Cameron</p></span>
+                        <span class="students"><i class="far fa-heart"></i> 35</span>
+                        <span class="students"><i class="far fa-user"></i> 25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let data = [
+            imgSrc = {
+                img1: "img/socialmedia.jpg",
+                img2: "img/socialmedia.jpg",
+                img3: "img/socialmedia.jpg"
+            },
+            price = {
+                price1: "$25",
+                price2: "$25",
+                price3: "$25"
+            },
+            title = {
+                title1: "Social Media Network",
+                title2: "Social Media Network",
+                title3: "Social Media Network"
+            },
+            content = {
+                content1: "One make creepeth man bearing their one firmament won't fowl meat over sea lorem.",
+                content2: "One make creepeth man bearing their one firmament won't fowl meat over sea lorem.",
+                content3: "One make creepeth man bearing their one firmament won't fowl meat over sea lorem."
+            }
+        ]
+
+        // img data
+        document.getElementById('img1').src = data[0].img1;
+        document.getElementById('img2').src = data[0].img2;
+        document.getElementById('img3').src = data[0].img3;
+
+        // price data
+        document.getElementById('price1').innerText = data[1].price1;
+        document.getElementById('price2').innerText = data[1].price2;
+        document.getElementById('price3').innerText = data[1].price3;
+
+        // title data
+        document.getElementById('title1').innerText = data[2].title1;
+        document.getElementById('title2').innerText = data[2].title2;
+        document.getElementById('title3').innerText = data[2].title3;
+
+        // content data
+        document.getElementById('content1').innerText = data[3].content1;
+        document.getElementById('content2').innerText = data[3].content2;
+        document.getElementById('content3').innerText = data[3].content3;
+    </script>
+</body>
+
+</html>
